@@ -1,0 +1,10 @@
+Настройки на mail service-a.
+
+
+1. Отворете command prompt и навигирайте до ${JBOSS_HOME}/bin
+2. Стартирайте add-user.bat
+3. Създайте management user като следвате стъпките. Оставете множеството от групи празно, а на последния въпрос отговорете с "yes"
+4. Следвайте инструкциите за създаване на mail session от този сайт: http://khozzy.blogspot.com/2013/10/how-to-send-mails-from-jboss-wildfly.html
+	4.1. За име използвайте java:jboss/mail/bbay
+	4.2. За username и password при настройките използвайте: balkan.bay@gmail.com / rjwqhysawevyujor
+	4.3. Като изпращач по подразбиране поставете no-reply@bbay.com

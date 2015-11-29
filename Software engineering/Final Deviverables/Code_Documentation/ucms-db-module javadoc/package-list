@@ -1,0 +1,15 @@
+com.ami.mse.ucms.db.entities.comment
+com.ami.mse.ucms.db.entities.component
+com.ami.mse.ucms.db.entities.document
+com.ami.mse.ucms.db.entities.group
+com.ami.mse.ucms.db.entities.tasks
+com.ami.mse.ucms.db.entities.template
+com.ami.mse.ucms.db.entities.user
+com.ami.mse.ucms.db.manager.comment
+com.ami.mse.ucms.db.manager.component
+com.ami.mse.ucms.db.manager.document
+com.ami.mse.ucms.db.manager.group
+com.ami.mse.ucms.db.manager.tasks
+com.ami.mse.ucms.db.manager.template
+com.ami.mse.ucms.db.manager.user
+com.ami.mse.ucms.db.utils
