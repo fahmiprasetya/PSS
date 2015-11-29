@@ -1,0 +1,38 @@
+centralizirana BD ?
+Centralizirano upravlenie ?
+web bazirana ?
+oblak ?
+spodeleni resursi ? nerazpredeleni,centralizirani programi i centralizirana informaciq
+edinen portal ? (single window, single desktop)
+
+centraliziran katalog na dokumenti ? 
+vruzka s vun6ni kroespondenti?
+vruzka s treti stranni ?
+avtomatizaciq na program ?
+virtualizaciq ?
+biblioteki za ob6ta upotreba ?
+kakva 6te e 6inata ?(ring,zvezda, mrejova) centralnata 6te e ESB, pri nas-mrejova
+semanti4na informaciq ?
+kolko LAn mreji 6te ima ?
+
+
+
+browser, debel klient, tunuk klient( java script)
+
+
+prezentaciq- course introduction
+
+slide 3- dqsnata 4ast, n ocentralizirana
+slide 4 - komponentna diagrama
+slide 9 - 
+sinioto e oblaka......oranjavoto otgovarq na dqsnata 4ast na slide 3
+
+slide 10 - datacenter v sredata, disaster recovery v dsno
+
+
+slide 12 - slojete qdro i biznes komponenti v dolu-dqsno
+
+slide 14.
+
+vzeh,populnih,platih taksa,podadoh,proveriha formalno,prieha,vzeha otpe4atuci i snimki, logi4eski kontrol, zamruzen/do razrabotvane
+ ili ti davat gotovata
