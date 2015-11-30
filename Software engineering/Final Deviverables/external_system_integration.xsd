@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://ucms.com/" xmlns:tns="http://ucms.com/">
+
+	<xs:element name="submitDocumentRequest" type="tns:submitDocumentRequest" />
+	<xs:element name="opreationResponse" type="tns:submitDocumentResponse" />
+
+	<!-- Submit document with authentication required. -->
+	<xs:complexType name="submitDocumentRequest">
+		<xs:sequence>
+			<xs:element name="documentTemplate" type="xs:string"
+				minOccurs="1" />
+			<xs:element name="username" type="xs:string" minOccurs="1" />
+			<xs:element name="token" type="xs:string" minOccurs="1" />
+			<xs:element name="document" type="tns:document" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Submit document with no authentication required -->
+	<xs:complexType name="submitDocumentRequestNoAuth">
+		<xs:sequence>
+			<xs:element name="documentTemplate" type="xs:string"
+				minOccurs="1" />
+			<xs:element name="document" type="tns:document" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Submit document response -->
+	<xs:complexType name="submitDocumentResponse">
+		<xs:sequence>
+			<!-- The uuId of the newly created document -->
+			<xs:element name="sourceId" type="xs:string" minOccurs="1" />
+			<xs:element name="return" type="tns:operationResult"
+				minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Document data -->
+	<xs:complexType name="document">
+		<xs:sequence>
+			<xs:element name="sourceId" type="xs:string" minOccurs="1" />
+			<xs:element name="fileName" type="xs:string" minOccurs="1" />
+			<xs:element name="mimetype" type="xs:string" minOccurs="1" />
+			<xs:element name="fileContent" type="xs:base64Binary"
+				minOccurs="1" />
+			<xs:element name="templateData" type="tns:templateData"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="externalDocumentId" type="xs:string"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="documentTemplate">
+		<xs:sequence>
+			<!-- The uuId of the newly created document -->
+			<xs:element name="templateName" type="xs:string" minOccurs="1" />
+			<xs:element name="templateId" type="xs:string" minOccurs="0" />
+			<xs:element name="field" type="xs:string"
+				minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Template data for the document as label and value pairs -->
+	<xs:complexType name="templateData">
+		<xs:sequence>
+			<xs:element name="label" type="xs:string" minOccurs="1" />
+			<xs:element name="value" type="xs:string" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Operation result -->
+	<xs:complexType name="operationResult">
+		<xs:sequence>
+			<xs:element name="code" type="tns:responseCodes"
+				minOccurs="1" />
+			<xs:element name="displayMessage" type="xs:string"
+				nillable="true" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Response code constants -->
+	<xs:simpleType name="responseCodes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SUCCESS" />
+			<xs:enumeration value="OPERATION_FAILED" />
+			<xs:enumeration value="INTERNAL_ERROR" />
+			<xs:enumeration value="INVALID_INPUT_DATA" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

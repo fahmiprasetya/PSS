@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://ucms.com/" xmlns:tns="http://ucms.com/">
+
+	<xs:element name="authenticationRequest" type="tns:authenticationRequest" />
+	<xs:element name="authenticationResponse" type="tns:authenticationResponse" />
+
+	<!-- Submit document -->
+	<xs:complexType name="authenticationRequest">
+		<xs:sequence>
+			<xs:element name="authenticationData" type="tns:authenticationData"
+				minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Submit document response -->
+	<xs:complexType name="authenticationResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:boolean" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Document data -->
+	<xs:complexType name="authenticationData">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string" minOccurs="1" />
+			<xs:element name="token" type="xs:string" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

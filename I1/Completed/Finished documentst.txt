@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 sfdfssfdsdf
+=======
+ksfa
+sakfp
+>>>>>>> 3ed4586b0bae3e219e8abf68bd5fa985a4e60cc6

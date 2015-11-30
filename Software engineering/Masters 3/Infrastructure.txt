@@ -1,0 +1,9 @@
+-- IP --
+77.78.2.246
+
+-- Ports --
+Remote Desktop 3387
+Jenkins 8080
+JBoss 8081
+PostgreSQL 5432
+SonarQube 9000
