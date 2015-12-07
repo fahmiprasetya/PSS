@@ -1,8 +1,9 @@
 task assignements -> re4nik -> opredeleno vreme
 
 task assignments -> opredelqne na rabota v 4oveko4asove i da se suobrazi s grafika v ms project
-
+			времето за задачите сумарно да е колкото времето отделено по календарния график в човеко/часове
 ABM da se pi6e navsqkude kato abreviatura
+8 години гаранционен срок - 1 година
 
 v QA plana - METRIKI !
 
@@ -13,7 +14,7 @@ Da se vkarat v template-a convenciite za pisane na kod
 Istoriq na promenite - versii
 
 
-popravka na Soft specific - > kreditni vlogove ....vlogove... 
+popravka na Soft specific - > kreditni vlogove -DELete....vlogove... 
 		
 		
 		3.11 zakrivane na vlog
@@ -23,7 +24,7 @@ popravka na Soft specific - > kreditni vlogove ....vlogove...
 		
 		bankomati - osven svur6ili sredstva ....svur6ena kasovi belejki
 
-
+			пропадане на връзка с банкомат 
 		3.3.1 kreditna karta -> ....tip na karta
 
 		3.3.2 potrebitel / klient
